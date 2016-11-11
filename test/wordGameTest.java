@@ -91,8 +91,10 @@ public class wordGameTest {
         String[] wordsToPlay = {"MOLECULA"};
         wordGame testGame = new wordGame(wordsToPlay);
         int pos = testGame.getPosCharacterInWord(wordsToPlay[0], 'L');
+        int pos2 = testGame.getPosCharacterInWord(wordsToPlay[0], 'S');
 
         assertNotEquals(pos, -1);
+        assertEquals(pos2, -1);
     }
     
     
